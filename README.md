@@ -88,11 +88,15 @@ Big O Notation describes how the **execution time** or **space usage** of an ope
 | **join()** | Convert to string | **O(n)** | O(n)** | `arr.join(',')` |
 | **spread (...)** | Copy elements | **O(n)** | O(n)** | `[...arr]/` |
 
+
+# JavaScript Performance Test
+
+```javascript
 const firstArray = [];
 const secondArray = [];
 
-for(let i = 0; i < 600000; i++){
-    if(i < 300000){
+for (let i = 0; i < 600000; i++) {
+    if (i < 300000) {
         firstArray.push(i);
     }
     secondArray.push(i);
